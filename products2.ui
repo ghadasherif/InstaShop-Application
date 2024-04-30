@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Products2</class>
+ <widget class="QDialog" name="Products2">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1140</width>
+    <height>866</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QPushButton" name="pushButton_additemseller">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>130</y>
+     <width>221</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string> Add Item</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_deleteseller">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>420</y>
+     <width>241</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Delete Item</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
