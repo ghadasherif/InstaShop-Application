@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "login_register_window.h"
+#include "login_register_seller.h"
 //#include "ui_login_register_window.h"
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -18,8 +19,8 @@ MainWindow::~MainWindow()
 void MainWindow::on_seller_button_clicked()
 {
     hide();
-    Login_Register_Window* LoginRegister= new Login_Register_Window(this);
-    LoginRegister->show();
+    Login_Register_Window* LoginRegister2= new Login_Register_Window(this);
+    LoginRegister2->show();
 
 }
 

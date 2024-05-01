@@ -4,8 +4,8 @@
 #include "register2.h"
 
 login_register_seller::login_register_seller(QWidget *parent) :
-    QDialog(parent),
-    ui(new Ui::login_register_seller)
+    QDialog(parent)
+
 {
     ui->setupUi(this);
 }

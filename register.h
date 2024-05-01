@@ -12,8 +12,11 @@ class Register : public QDialog
     Q_OBJECT
 
 public:
-    explicit Register(QWidget *parent = nullptr);
+explicit Register(QWidget *parent = nullptr);
     ~Register();
+
+private slots:
+    void on_pushButton_SubmitRegisterBuyer_clicked();
 
 private:
     Ui::Register *ui;

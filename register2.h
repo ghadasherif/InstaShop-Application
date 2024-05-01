@@ -16,7 +16,9 @@ public:
     ~register2();
 
 private slots:
-    void on_pushButton_submitregisterseller_clicked();
+
+
+    void on_pushButton_SubmitRegisterSeller_clicked();
 
 private:
     Ui::register2 *ui;

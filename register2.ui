@@ -36,20 +36,20 @@
     </rect>
    </property>
    <property name="text">
-    <string>name:</string>
+    <string>Name:</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_ageseller">
    <property name="geometry">
     <rect>
      <x>120</x>
-     <y>230</y>
+     <y>240</y>
      <width>58</width>
      <height>16</height>
     </rect>
    </property>
    <property name="text">
-    <string>age:</string>
+    <string>Age:</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_numseller">
@@ -62,27 +62,27 @@
     </rect>
    </property>
    <property name="text">
-    <string>number:</string>
+    <string>Phone number:</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_passseller">
    <property name="geometry">
     <rect>
      <x>120</x>
-     <y>330</y>
+     <y>360</y>
      <width>111</width>
      <height>21</height>
     </rect>
    </property>
    <property name="text">
-    <string>password:</string>
+    <string>Password:</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_reenterpassseller">
    <property name="geometry">
     <rect>
      <x>120</x>
-     <y>380</y>
+     <y>400</y>
      <width>121</width>
      <height>31</height>
     </rect>
@@ -115,7 +115,7 @@
    <property name="geometry">
     <rect>
      <x>240</x>
-     <y>290</y>
+     <y>280</y>
      <width>113</width>
      <height>21</height>
     </rect>
@@ -125,7 +125,7 @@
    <property name="geometry">
     <rect>
      <x>240</x>
-     <y>340</y>
+     <y>370</y>
      <width>113</width>
      <height>21</height>
     </rect>
@@ -135,23 +135,124 @@
    <property name="geometry">
     <rect>
      <x>240</x>
-     <y>380</y>
+     <y>410</y>
      <width>113</width>
      <height>21</height>
     </rect>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_submitregisterseller">
+  <widget class="QPushButton" name="pushButton_SubmitRegisterSeller">
    <property name="geometry">
     <rect>
-     <x>120</x>
-     <y>430</y>
-     <width>141</width>
-     <height>41</height>
+     <x>340</x>
+     <y>457</y>
+     <width>91</width>
+     <height>21</height>
     </rect>
    </property>
    <property name="text">
-    <string>Submit </string>
+    <string>Submit</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelErrorUsername_register2">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>190</y>
+     <width>131</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;*This username already exists&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelErrorPassword_register2">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>380</y>
+     <width>141</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;*Not matching passwords&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelErrorAge_register2">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>240</y>
+     <width>161</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;*Minimum age required is 16&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_email_register2">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>330</y>
+     <width>37</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Email:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_email_register2">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>330</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelErrorPhone_register2">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>290</y>
+     <width>131</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;*Not valid phone number&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelErrorEmail_register2">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>340</y>
+     <width>91</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;*Not valid email&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelErrorAllFields_register2">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>460</y>
+     <width>121</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#ff0000;&quot;&gt;*All fields must be fulfilled&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
  </widget>

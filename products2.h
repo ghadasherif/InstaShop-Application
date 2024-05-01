@@ -18,7 +18,7 @@ public:
 private slots:
     void on_pushButton_additemseller_clicked();
 
-    void on_pushButton_clicked();
+
 
     void on_pushButton_deleteseller_clicked();
 
