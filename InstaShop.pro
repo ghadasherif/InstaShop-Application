@@ -21,6 +21,7 @@ SOURCES += \
     login_register_window.cpp \
     main.cpp \
     mainwindow.cpp \
+    product.cpp \
     products1.cpp \
     products2.cpp \
     register.cpp \
@@ -40,6 +41,7 @@ HEADERS += \
     login_register_seller.h \
     login_register_window.h \
     mainwindow.h \
+    product.h \
     products1.h \
     products2.h \
     register.h \

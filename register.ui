@@ -107,7 +107,7 @@
   <widget class="QLineEdit" name="lineEdit_nameregister">
    <property name="geometry">
     <rect>
-     <x>250</x>
+     <x>210</x>
      <y>190</y>
      <width>151</width>
      <height>21</height>
@@ -117,7 +117,7 @@
   <widget class="QLineEdit" name="lineEdit_num">
    <property name="geometry">
     <rect>
-     <x>250</x>
+     <x>210</x>
      <y>240</y>
      <width>151</width>
      <height>21</height>
@@ -127,7 +127,7 @@
   <widget class="QLineEdit" name="lineEdit_email">
    <property name="geometry">
     <rect>
-     <x>250</x>
+     <x>210</x>
      <y>290</y>
      <width>151</width>
      <height>21</height>
@@ -137,7 +137,7 @@
   <widget class="QLineEdit" name="lineEdit_age">
    <property name="geometry">
     <rect>
-     <x>250</x>
+     <x>210</x>
      <y>340</y>
      <width>141</width>
      <height>21</height>
@@ -147,7 +147,7 @@
   <widget class="QLineEdit" name="lineEdit_pass">
    <property name="geometry">
     <rect>
-     <x>250</x>
+     <x>220</x>
      <y>390</y>
      <width>131</width>
      <height>21</height>
@@ -160,7 +160,7 @@
   <widget class="QLineEdit" name="lineEdit_reenterpass">
    <property name="geometry">
     <rect>
-     <x>250</x>
+     <x>220</x>
      <y>440</y>
      <width>131</width>
      <height>21</height>
@@ -188,7 +188,7 @@
     <rect>
      <x>420</x>
      <y>190</y>
-     <width>141</width>
+     <width>151</width>
      <height>20</height>
     </rect>
    </property>
@@ -199,10 +199,10 @@
   <widget class="QLabel" name="labelErrorPass">
    <property name="geometry">
     <rect>
-     <x>430</x>
-     <y>450</y>
-     <width>151</width>
-     <height>16</height>
+     <x>420</x>
+     <y>440</y>
+     <width>171</width>
+     <height>31</height>
     </rect>
    </property>
    <property name="text">
@@ -214,7 +214,7 @@
     <rect>
      <x>420</x>
      <y>340</y>
-     <width>121</width>
+     <width>181</width>
      <height>16</height>
     </rect>
    </property>
