@@ -1,7 +1,8 @@
 #include "register2.h"
 #include "ui_register2.h"
 #include "products2.h"
-
+#include "user.h"
+#include "UsersData.h"
 register2::register2(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::register2)
@@ -30,37 +31,34 @@ void register2::on_pushButton_SubmitRegisterSeller_clicked()
 
     if (age < 16) {
         ui->labelErrorAge_register2->setVisible(true);
-        return;
-    } else {
-        ui->labelErrorAge_register2->setVisible(false);
-
     }
 
     QString phoneNumber=ui->lineEdit_numseller->text();
     if (phoneNumber.length() != 11) {
         ui->labelErrorPhone_register2->setVisible(true);
-        return;
-    } else {
-        ui->labelErrorPhone_register2->setVisible(false);
-
     }
     QString email= ui->lineEdit_email_register2->text();
-    if (!email.contains('@')) {
+    if (!email.contains('@')||(!email.contains(".com"))) {
 
         ui->labelErrorEmail_register2->setVisible(true);
-        return;
-    } else {
-        ui->labelErrorEmail_register2->setVisible(false);
-
     }
     if (name.isEmpty() || password.isEmpty() || reenterpassword.isEmpty() || email.isEmpty() || phoneNumber.isEmpty()) {
         ui->labelErrorAllFields_register2->setVisible(true);
-        return;
-    } else {
-        ui->labelErrorAllFields_register2->setVisible(false);
-
     }
-
+    for (auto i=0;i<Users_Seller.size();i++)
+    {
+        if(name==(Users_Seller[i].Get_Name()))
+        {
+            break;
+            ui->labelErrorUsername_register2->setVisible(true);
+        }
+    }
+    if (password==reenterpassword)
+    {
+        ui->labelErrorPassword_register2->setVisible(true);
+    }
+    User objectseller(name,age,email,phoneNumber,password);
+    Users_Seller.push_back(objectseller);
     hide();
     Products2* productsseller= new Products2(this);
     productsseller->show();

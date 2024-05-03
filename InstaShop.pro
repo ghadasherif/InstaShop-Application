@@ -27,9 +27,11 @@ SOURCES += \
     register.cpp \
     register2.cpp \
     shoppingcart.cpp \
-    thankyou.cpp
+    thankyou.cpp \
+    user.cpp
 
 HEADERS += \
+    UsersData.h \
     bakeriesandcakes.h \
     butcheryandseafood.h \
     checkout.h \
@@ -47,7 +49,8 @@ HEADERS += \
     register.h \
     register2.h \
     shoppingcart.h \
-    thankyou.h
+    thankyou.h \
+    user.h
 
 FORMS += \
     bakeriesandcakes.ui \
