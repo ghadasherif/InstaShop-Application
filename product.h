@@ -22,6 +22,8 @@ public:
     void setproduct_ID(int id);
     void addProduct(const QString& name, float price, const QString& description);
     void displayProductDetails();
+    void searchProduct(const QString& name);
+
 
 };
 
