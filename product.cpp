@@ -54,3 +54,16 @@ void Product::addProduct(const QString& name, float price, const QString& descri
     // push/ add the new product in the vector or products created
     products.push_back(newProduct);
 }
+void Product::searchProduct(const QString& name){
+    bool found = false; // flag to check if product available
+    for(size_t i=0 ; i<products.size(); i++){
+        if(products[i].getProductName() == name){
+            found = true;
+            products[i].displayProductDetails(); // to display details of product that matches the name searched
+            cout << "======================" << endl;
+        }
+    }
+    if(found==false){
+        cout << name.toStdString() << " could not be found!!" << endl;
+    }
+}
