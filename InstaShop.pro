@@ -31,6 +31,8 @@ SOURCES += \
     user.cpp
 
 HEADERS += \
+    ShoppingCart_Stack.h \
+    ShoppingCart_Vector.h \
     UsersData.h \
     bakeriesandcakes.h \
     butcheryandseafood.h \

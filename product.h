@@ -2,7 +2,7 @@
 #define PRODUCT_H
 #include<QString>
 #include <vector>
-#include "vector_products.h"
+//#include "vector_products.h"
 class Product
 {  private :
         QString productName;
@@ -21,7 +21,7 @@ class Product
         void setproduct_price(float p);
         void setproduct_description(const QString& desc);
         void setproduct_ID(int id);
-        void addProduct(const QString& name, float price, const QString& description, int id);
+        void addProduct(const QString& name, float price, const QString& description, int id,QString link);
         //void displayProductDetails();
         bool searchProduct(const QString& name);
         void setimage_link(QString link);

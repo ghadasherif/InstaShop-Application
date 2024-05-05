@@ -1,5 +1,6 @@
 #include "product.h"
 #include <iostream>
+#include "vector_products.h"
 using namespace std;
 
 Product::Product() {}
@@ -53,10 +54,10 @@ int Product::getProductID()
 
 void Product::addProduct(const QString& name, float price, const QString& description,int id,QString link) {
     Product newProduct;
-    newProduct.setProductName(name);
-    newProduct.setProductPrice(price);
-    newProduct.setProductDescription(description);
-    newProduct.setProductID(id);
+    newProduct.setproduct_name(name);
+    newProduct.setproduct_price(price);
+    newProduct.setproduct_description(description);
+    newProduct.setproduct_ID(id);
     newProduct.setimage_link(link);
     // push/ add the new product in the vector or products created
     products.push_back(newProduct);
