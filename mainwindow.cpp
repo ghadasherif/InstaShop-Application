@@ -40,7 +40,8 @@ MainWindow::MainWindow(QWidget *parent)
             }
             products.push_back(obj);
         }
-        file.close(); 
+        file.close();
+        extern current = products.end;
 }
 
 }
