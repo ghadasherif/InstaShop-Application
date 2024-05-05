@@ -31,6 +31,19 @@
     <string>Thank You for your Order!</string>
    </property>
   </widget>
+  <widget class="QPushButton" name="pushButton_continue">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>570</y>
+     <width>181</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Continue Shopping</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

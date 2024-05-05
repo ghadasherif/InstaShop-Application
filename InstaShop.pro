@@ -50,7 +50,8 @@ HEADERS += \
     register2.h \
     shoppingcart.h \
     thankyou.h \
-    user.h
+    user.h \
+    vector_products.h
 
 FORMS += \
     bakeriesandcakes.ui \
