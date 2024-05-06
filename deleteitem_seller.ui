@@ -59,6 +59,19 @@
     </rect>
    </property>
   </widget>
+  <widget class="QPushButton" name="pushButton_submitdeleteitem">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>330</y>
+     <width>241</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Submit</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

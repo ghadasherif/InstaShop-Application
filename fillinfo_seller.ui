@@ -78,17 +78,17 @@
     <string>Product Description:</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_6">
+  <widget class="QLabel" name="label_imagelink">
    <property name="geometry">
     <rect>
-     <x>90</x>
-     <y>420</y>
-     <width>261</width>
-     <height>151</height>
+     <x>80</x>
+     <y>360</y>
+     <width>131</width>
+     <height>31</height>
     </rect>
    </property>
    <property name="text">
-    <string/>
+    <string>image Link:</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_nameseller">
@@ -142,6 +142,29 @@
    </property>
    <property name="text">
     <string>Submit </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_errormessageinfoseller">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>410</y>
+     <width>331</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff2600;&quot;&gt;This field is empty!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_imagelink">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>370</y>
+     <width>113</width>
+     <height>21</height>
+    </rect>
    </property>
   </widget>
  </widget>

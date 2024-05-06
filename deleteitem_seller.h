@@ -15,6 +15,9 @@ public:
     explicit deleteitem_seller(QWidget *parent = nullptr);
     ~deleteitem_seller();
 
+private slots:
+    void on_pushButton_submitdeleteitem_clicked();
+
 private:
     Ui::deleteitem_seller *ui;
 };
