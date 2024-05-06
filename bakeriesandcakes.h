@@ -16,9 +16,9 @@ public:
     ~BakeriesandCakes();
 
 private slots:
-    void on_pushButton_SearchItemBakeries_clicked();
+   // void on_pushButton_SearchItemBakeries_clicked();
 
-    void on_pushButton_addbakeryproduct_clicked();
+   // void on_pushButton_addbakeryproduct_clicked();
 
     void on_pushButton_viewbakeriesproduct_clicked();
 
