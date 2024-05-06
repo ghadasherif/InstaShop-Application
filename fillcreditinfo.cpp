@@ -20,7 +20,7 @@ FillCreditinfo::~FillCreditinfo()
 void FillCreditinfo::on_pushButton_submitpayment_clicked()
 {  QString CardHolderName= ui->lineEdit_cardname->text();
     QString cvc= ui->lineEdit_cardcvc->text();
-    if(cvc.length() != 3 ){
+    if(cvc.length() != 3 ){ //to make sure that the buyer is entering a valid cvc
         ui->labelErrorCVC_credit->setVisible(true);
     }
     else {
@@ -29,7 +29,7 @@ void FillCreditinfo::on_pushButton_submitpayment_clicked()
     }
 
     QString cardNumber = ui->lineEdit_cardnum->text();
-    if (cardNumber.length() != 16){
+    if (cardNumber.length() != 16){//to make sure that the buyer is entering a valid card number
         ui->labelErrorCardNum_credit->setVisible(true);
     }
     else {
@@ -39,7 +39,7 @@ void FillCreditinfo::on_pushButton_submitpayment_clicked()
     QString month = ui->comboBox_creditMonth ->currentText();
     QString day = ui->comboBox_creditDay->currentText();
 
-    if (CardHolderName.isEmpty()||cardNumber.isEmpty()|| cvc.isEmpty()|| month.isEmpty() || day.isEmpty()){
+    if (CardHolderName.isEmpty()||cardNumber.isEmpty()|| cvc.isEmpty()|| month.isEmpty() || day.isEmpty()){ //to make sure that all the user entered all the required data
         ui->labelErrorAllFields_credit->setVisible(true);
     } else {
         ui->labelErrorAllFields_credit->setVisible(false);

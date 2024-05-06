@@ -28,22 +28,22 @@ void Register::on_pushButton_SubmitRegisterBuyer_clicked()
     QString reenterpassword =ui->label_reenterpass->text();
     int age =ui->lineEdit_age->text().toInt();
 
-    if (age < 16)
+    if (age < 16)   // to make sure that the buyer is old enough to purchase products
     {
         ui->labelErrorAge_register->setVisible(true);
     }
     QString phoneNumber=ui->lineEdit_num->text();
-    if (phoneNumber.length() != 11)
+    if (phoneNumber.length() != 11)     //to make sure that the buyer entered a valid phone number
     {
         ui->labelErrorPhone_register->setVisible(true);
     }
     QString email= ui->lineEdit_email->text();
-    if ((!email.contains('@'))||(!email.contains(".com")))
+    if ((!email.contains('@'))||(!email.contains(".com")))      //to make sure that the buyer entered an actual email
     {
 
         ui->labelErrorEmail_register->setVisible(true);
     }
-    if (name.isEmpty() || password.isEmpty() || reenterpassword.isEmpty() || email.isEmpty() || phoneNumber.isEmpty())
+    if (name.isEmpty() || password.isEmpty() || reenterpassword.isEmpty() || email.isEmpty() || phoneNumber.isEmpty())      //to male sure that the buyer entered all the data
     {
         ui->labelErrorAllFields_register->setVisible(true);
     }

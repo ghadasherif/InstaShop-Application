@@ -30,20 +30,20 @@ void register2::on_pushButton_SubmitRegisterSeller_clicked()
     QString reenterpassword =ui->label_reenterpassseller->text();
     int age =ui->lineEdit_ageseller->text().toInt();
 
-    if (age < 16) {
+    if (age < 16) {     //to make sure that the seller is old enough to sell products
         ui->labelErrorAge_register2->setVisible(true);
     }
 
     QString phoneNumber=ui->lineEdit_numseller->text();
-    if (phoneNumber.length() != 11) {
+    if (phoneNumber.length() != 11) {       //to make sure that the seller entered a valid phone number
         ui->labelErrorPhone_register2->setVisible(true);
     }
     QString email= ui->lineEdit_email_register2->text();
-    if (!email.contains('@')||(!email.contains(".com"))) {
+    if (!email.contains('@')||(!email.contains(".com"))) {      //to make sure that the seller entered an actual email
 
         ui->labelErrorEmail_register2->setVisible(true);
     }
-    if (name.isEmpty() || password.isEmpty() || reenterpassword.isEmpty() || email.isEmpty() || phoneNumber.isEmpty()) {
+    if (name.isEmpty() || password.isEmpty() || reenterpassword.isEmpty() || email.isEmpty() || phoneNumber.isEmpty()) {        //to make sure that the seller entered all the data
         ui->labelErrorAllFields_register2->setVisible(true);
     }
     for (auto i=0;i<Users_Seller.size();i++)
