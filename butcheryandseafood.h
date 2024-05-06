@@ -22,6 +22,24 @@ private slots:
 
     void on_pushButton_searchbutchery_clicked();
 
+    void on_pushButton_addbutcheryproduct_2_clicked();
+
+    void on_pushButton_addbutcheryproduct_3_clicked();
+
+    void on_pushButton_addbutcheryproduct_4_clicked();
+
+    void on_pushButton_addbutcheryproduct_5_clicked();
+
+    void on_pushButton_addbutcheryproduct_6_clicked();
+
+    void on_pushButton_addbutcheryproduct_7_clicked();
+
+    void on_pushButton_addbutcheryproduct_8_clicked();
+
+    void on_pushButton_addbutcheryproduct_9_clicked();
+
+    void on_pushButton_addbutcheryproduct_10_clicked();
+
 private:
     Ui::butcheryandseafood *ui;
 };
