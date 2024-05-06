@@ -2,6 +2,7 @@
 #include "ui_products2.h"
 #include "fillinfo_seller.h"
 #include "deleteitem_seller.h"
+#include "UsersData.h"
 
 Products2::Products2(QWidget *parent) :
     QDialog(parent),

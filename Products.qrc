@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/milk"/>
+    <qresource prefix="/eggs"/>
+    <qresource prefix="/bell peppers"/>
+    <qresource prefix="/croissant"/>
+</RCC>

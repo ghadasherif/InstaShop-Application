@@ -14,6 +14,7 @@ class login_register_seller : public QDialog
 public:
     explicit login_register_seller(QWidget *parent = nullptr);
     ~login_register_seller();
+   // void on_pushButton_login_seller_clicked();
 
 private slots:
     void on_pushButton_login_seller_clicked();

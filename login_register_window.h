@@ -14,7 +14,7 @@ class Login_Register_Window : public QDialog
 public:
     explicit Login_Register_Window(QWidget *parent = nullptr);
     ~Login_Register_Window();
-
+     //void on_pushButton_Register_clicked();
 private slots:
     void on_pushButton_Register_clicked();
 

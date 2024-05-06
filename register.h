@@ -14,7 +14,7 @@ class Register : public QDialog
 public:
 explicit Register(QWidget *parent = nullptr);
     ~Register();
-
+//void on_pushButton_SubmitRegisterBuyer_clicked();
 private slots:
     void on_pushButton_SubmitRegisterBuyer_clicked();
 

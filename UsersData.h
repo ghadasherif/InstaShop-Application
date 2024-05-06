@@ -1,6 +1,8 @@
 #ifndef USERSDATA_H
 #define USERSDATA_H
 #include <QVector>
+#include <vector>
+
 #include "user.h"
 extern std::vector<User> Users_Seller;
 extern std::vector<User> Users_Buyer;

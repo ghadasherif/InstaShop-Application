@@ -3,6 +3,7 @@
 #include "products2.h"
 #include "user.h"
 #include "UsersData.h"
+
 register2::register2(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::register2)

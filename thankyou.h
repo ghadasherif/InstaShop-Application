@@ -15,6 +15,9 @@ public:
     explicit ThankYou(QWidget *parent = nullptr);
     ~ThankYou();
 
+private slots:
+    void on_pushButton_continue_clicked();
+
 private:
     Ui::ThankYou *ui;
 };

@@ -16,6 +16,9 @@ FillInfo_Seller::~FillInfo_Seller()
 
 void FillInfo_Seller::on_pushButton_submit_clicked()
 {
-
+// for loop in a ector or produtcs/ product{i]. get productname== value in line edit
+    // if )search function
+    // remove from vector of prodcuts an dthen break.
+    // set visible l true (item u want to delete is not found)
 }
 

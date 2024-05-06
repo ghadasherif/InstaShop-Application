@@ -25,7 +25,7 @@ shoppingcart::shoppingcart(QWidget *parent) :
             QString nameitem=Cart_item_Vecs[i].getProductName();
             float priceitem=Cart_item_Vecs[i].getProductPrice();
             QString price_str=QString::number(priceitem);
-            if(name_displaying!="")
+            if(name_displaying=="")
                 {
                 ui->Item1_name->setText(nameitem);
                 ui->item1_price->setText(price_str);
@@ -33,7 +33,7 @@ shoppingcart::shoppingcart(QWidget *parent) :
                 else
                 {
                     QString name_displaying=ui->Item2_name->text();
-                    if(name_displaying!="")
+                    if(name_displaying=="")
                     {
                         ui->Item2_name->setText(nameitem);
                         ui->item2_price->setText(price_str);
@@ -42,7 +42,7 @@ shoppingcart::shoppingcart(QWidget *parent) :
                     else
                     {
                         QString name_displaying=ui->Item3_name->text();
-                        if(name_displaying!="")
+                        if(name_displaying=="")
                         {
                             ui->Item3_name->setText(nameitem);
                             ui->item3_price->setText(price_str);
@@ -50,7 +50,7 @@ shoppingcart::shoppingcart(QWidget *parent) :
                         else
                         {
                             QString name_displaying=ui->Item4_name->text();
-                            if(name_displaying!="")
+                            if(name_displaying=="")
                             {
                                 ui->Item4_name->setText(nameitem);
                                 ui->item4_price->setText(price_str);
@@ -58,7 +58,7 @@ shoppingcart::shoppingcart(QWidget *parent) :
                             else
                             {
                                 QString name_displaying=ui->Item5_name->text();
-                                if(name_displaying!="")
+                                if(name_displaying=="")
                                 {
                                     ui->Item5_name->setText(nameitem);
                                     ui->item5_price->setText(price_str);
@@ -66,7 +66,7 @@ shoppingcart::shoppingcart(QWidget *parent) :
                                 else
                                 {
                                     QString name_displaying=ui->Item6_name->text();
-                                    if(name_displaying!="")
+                                    if(name_displaying=="")
                                     {
                                         ui->Item6_name->setText(nameitem);
                                         ui->item6_price->setText(price_str);
@@ -74,7 +74,7 @@ shoppingcart::shoppingcart(QWidget *parent) :
                                     else
                                     {
                                         QString name_displaying=ui->Item7_name->text();
-                                        if(name_displaying!="")
+                                        if(name_displaying=="")
                                         {
                                             ui->Item7_name->setText(nameitem);
                                             ui->item7_price->setText(price_str);
@@ -82,7 +82,7 @@ shoppingcart::shoppingcart(QWidget *parent) :
                                         else
                                         {
                                             QString name_displaying=ui->Item8_name->text();
-                                            if(name_displaying!="")
+                                            if(name_displaying=="")
                                             {
                                                 ui->Item8_name->setText(nameitem);
                                                 ui->item8_price->setText(price_str);
@@ -90,7 +90,7 @@ shoppingcart::shoppingcart(QWidget *parent) :
                                             else
                                             {
                                                 QString name_displaying=ui->Item9_name->text();
-                                                if(name_displaying!="")
+                                                if(name_displaying=="")
                                                 {
                                                     ui->Item9_name->setText(nameitem);
                                                     ui->item9_price->setText(price_str);
@@ -98,7 +98,7 @@ shoppingcart::shoppingcart(QWidget *parent) :
                                                 else
                                                 {
                                                     QString name_displaying=ui->Item10_name->text();
-                                                    if(name_displaying!="")
+                                                    if(name_displaying=="")
                                                     {
                                                         ui->Item10_name->setText(nameitem);
                                                         ui->item10_price->setText(price_str);
@@ -318,9 +318,9 @@ void shoppingcart::on_pushButton_CalculateTotal_clicked()
     float num=0.0;
     for (int i=0; i<Cart_item_Vecs.size();i++)
     {
-        if(Cart_item_Vecs[i].get_ProductPrice()!=0.0)
+        if(Cart_item_Vecs[i].getProductPrice()!=0.0 && Cart_item_Vecs[i].getProductPrice()!=NULL)
         {
-            num=num+Cart_item_Vecs[i].get_ProductPrice();
+            num=num+Cart_item_Vecs[i].getProductPrice();
         }
     }
     QString total_figure = QString::number(num);

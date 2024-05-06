@@ -14,11 +14,12 @@ class register2 : public QDialog
 public:
     explicit register2(QWidget *parent = nullptr);
     ~register2();
+    //void on_pushButton_SubmitRegisterSeller_clicked();
 
 private slots:
 
 
-    void on_pushButton_SubmitRegisterSeller_clicked();
+   void on_pushButton_SubmitRegisterSeller_clicked();
 
 private:
     Ui::register2 *ui;

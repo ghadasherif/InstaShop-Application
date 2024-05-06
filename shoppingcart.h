@@ -41,7 +41,7 @@ private slots:
 
     void on_Product10_Remove_clicked();
 
-    void on_pushButton_clicked();
+   // void on_pushButton_clicked();
 
     void on_pushButton_CalculateTotal_clicked();
 
