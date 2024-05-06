@@ -2,7 +2,8 @@
 #include "ui_bakeriesandcakes.h"
 #include "shoppingcart.h"
 #include "ShoppingCart_Stack.h"
-#include "product.h"
+//#include "product.h"
+#include "vector_products.h"
 BakeriesandCakes::BakeriesandCakes(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::BakeriesandCakes)
@@ -25,6 +26,9 @@ void BakeriesandCakes::on_pushButton_viewbakeriesproduct_clicked()
     shoppingcart* cart= new shoppingcart(this);
     cart->show();
 }
+
+
+
 
 
 void BakeriesandCakes::on_pushButton_addbakeryproduct1_clicked()
@@ -212,100 +216,108 @@ void BakeriesandCakes::on_pushButton_Search_clicked()
             QString name=ui->label_bakeriesproduct1name->text();
             if(name_searching==products[i].getProductName())
             {
-                if(name!="")
+                if (name == "")
                 {
                     ui->label_bakeriesproduct1name->setText(products[i].getProductName());
-                    ui->label_bakeriesproduct1price->setText(products[i].getProductPrice());
+                    ui->label_bakeriesproduct1price->setText(QString::number(products[i].getProductPrice())); // Convert float to QString
                     ui->label_bakeriesproduct1desc->setText(products[i].getProductDescription());
                     ui->label_bakeriesproduct1imagelink->setText(products[i].getimage_link());
                 }
+
+//                if(name=="")
+//                {
+//                    ui->label_bakeriesproduct1name->setText(products[i].getProductName());
+//                    ui->label_bakeriesproduct1price->setText(products[i].getProductPrice());
+//                    ui->label_bakeriesproduct1desc->setText(products[i].getProductDescription());
+//                    ui->label_bakeriesproduct1imagelink->setText(products[i].getimage_link());
+//                }
                 else
                 {
                     QString name=ui->label_bakeriesproduct2name->text();
-                    if(name!="")
+                    if(name=="")
                     {
                         ui->label_bakeriesproduct2name->setText(products[i].getProductName());
-                        ui->label_bakeriesproduct2price->setText(products[i].getProductPrice());
+                        ui->label_bakeriesproduct2price->setText(QString::number(products[i].getProductPrice()));
                         ui->label_bakeriesproduct2desc->setText(products[i].getProductDescription());
                         ui->label_bakeriesproduct2imagelink->setText(products[i].getimage_link());
                     }
                     else
                     {
                         QString name=ui->label_bakeriesproduct3name->text();
-                        if(name!="")
+                        if(name=="")
                         {
                             ui->label_bakeriesproduct3name->setText(products[i].getProductName());
-                            ui->label_bakeriesproduct3price->setText(products[i].getProductPrice());
+                            ui->label_bakeriesproduct3price->setText(QString::number(products[i].getProductPrice()));
                             ui->label_bakeriesproduct3desc->setText(products[i].getProductDescription());
                             ui->label_bakeriesproduct3imagelink->setText(products[i].getimage_link());
                         }
                         else
                         {
                             QString name=ui->label_bakeriesproduct4name->text();
-                            if(name!="")
+                            if(name=="")
                             {
                                 ui->label_bakeriesproduct4name->setText(products[i].getProductName());
-                                ui->label_bakeriesproduct4price->setText(products[i].getProductPrice());
+                                ui->label_bakeriesproduct4price->setText(QString::number(products[i].getProductPrice()));
                                 ui->label_bakeriesproduct4desc->setText(products[i].getProductDescription());
                                 ui->label_bakeriesproduct4imagelink->setText(products[i].getimage_link());
                             }
                             else
                             {
                                 QString name=ui->label_bakeriesproduct5name->text();
-                                if(name!="")
+                                if(name=="")
                                 {
                                     ui->label_bakeriesproduct5name->setText(products[i].getProductName());
-                                    ui->label_bakeriesproduct5price->setText(products[i].getProductPrice());
+                                    ui->label_bakeriesproduct5price->setText(QString::number(products[i].getProductPrice()));
                                     ui->label_bakeriesproduct5desc->setText(products[i].getProductDescription());
                                     ui->label_bakeriesproduct5imagelink->setText(products[i].getimage_link());
                                 }
                                 else
                                 {
                                     QString name=ui->label_bakeriesproduct6name->text();
-                                    if(name!="")
+                                    if(name=="")
                                     {
                                         ui->label_bakeriesproduct6name->setText(products[i].getProductName());
-                                        ui->label_bakeriesproduct6price->setText(products[i].getProductPrice());
+                                        ui->label_bakeriesproduct6price->setText(QString::number(products[i].getProductPrice()));
                                         ui->label_bakeriesproduct6desc->setText(products[i].getProductDescription());
                                         ui->label_bakeriesproduct6imagelink->setText(products[i].getimage_link());
                                     }
                                     else
                                     {
                                         QString name=ui->label_bakeriesproduct7name->text();
-                                        if(name!="")
+                                        if(name=="")
                                         {
                                             ui->label_bakeriesproduct7name->setText(products[i].getProductName());
-                                            ui->label_bakeriesproduct7price->setText(products[i].getProductPrice());
+                                            ui->label_bakeriesproduct7price->setText(QString::number(products[i].getProductPrice()));
                                             ui->label_bakeriesproduct7desc->setText(products[i].getProductDescription());
                                             ui->label_bakeriesproduct7imagelink->setText(products[i].getimage_link());
                                         }
                                         else
                                         {
                                             QString name=ui->label_bakeriesproduct8name->text();
-                                            if(name!="")
+                                            if(name=="")
                                             {
                                                 ui->label_bakeriesproduct8name->setText(products[i].getProductName());
-                                                ui->label_bakeriesproduct8price->setText(products[i].getProductPrice());
+                                                ui->label_bakeriesproduct8price->setText(QString::number(products[i].getProductPrice()));
                                                 ui->label_bakeriesproduct8desc->setText(products[i].getProductDescription());
                                                 ui->label_bakeriesproduct8imagelink->setText(products[i].getimage_link());
                                             }
                                             else
                                             {
                                                 QString name=ui->label_bakeriesproduct9name->text();
-                                                if(name!="")
+                                                if(name=="")
                                                 {
                                                     ui->label_bakeriesproduct9name->setText(products[i].getProductName());
-                                                    ui->label_bakeriesproduct9price->setText(products[i].getProductPrice());
+                                                    ui->label_bakeriesproduct9price->setText(QString::number(products[i].getProductPrice()));
                                                     ui->label_bakeriesproduct9desc->setText(products[i].getProductDescription());
                                                     ui->label_bakeriesproduct9imagelink->setText(products[i].getimage_link());
                                                 }
                                                 else
                                                 {
                                                     QString name=ui->label_bakeriesproduct10name->text();
-                                                    if(name!="")
+                                                    if(name=="")
                                                     {
                                                         ui->label_bakeriesproduct10name->setText(products[i].getProductName());
-                                                        ui->label_bakeriesproduct10price->setText(products[i].getProductPrice());
+                                                        ui->label_bakeriesproduct10price->setText(QString::number(products[i].getProductPrice()));
                                                         ui->label_bakeriesproduct10desc->setText(products[i].getProductDescription());
                                                         ui->label_bakeriesproduct10imagelink->setText(products[i].getimage_link());
                                                     }
