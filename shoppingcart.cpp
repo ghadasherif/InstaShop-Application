@@ -11,7 +11,7 @@ shoppingcart::shoppingcart(QWidget *parent) :
     ui(new Ui::shoppingcart)
 {
     ui->setupUi(this);
-    for (auto i=0;i<Cart_item_Vecs.size();i++)
+    for (auto i=0;i<Cart_item_Vecs.size();i++) // copies the content of the shopping cart stack to shopping cart vector
     {
         while(!Cart_Items.empty())
         {
@@ -19,7 +19,7 @@ shoppingcart::shoppingcart(QWidget *parent) :
             Cart_Items.pop();
         }
     }
-    for(int i=0; i<Cart_item_Vecs.size();i++)
+    for(int i=0; i<Cart_item_Vecs.size();i++) // displays the content of the shopping cart vector to be shown inside labels in the shopping cart window
     {
             QString name_displaying=ui->Item1_name->text();
             QString nameitem=Cart_item_Vecs[i].getProductName();

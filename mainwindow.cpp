@@ -21,7 +21,7 @@ MainWindow::MainWindow(QWidget *parent)
 
 
 
-    if(!file.open(QFile::ReadOnly | QFile::Text)) {
+    if(!file.open(QFile::ReadOnly | QFile::Text)) { //file open for read
         QMessageBox::information(this, "products file", "file is not open");
     }
     else
@@ -29,7 +29,7 @@ MainWindow::MainWindow(QWidget *parent)
         QTextStream in(&file);
         //QString text1;
         while (!in.atEnd()) {
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 5; i++) //Goes through the file line by line until it is empty and iterates to copies the corresponding lines to the corresponding places inside the object of the current element
             {
                 QString line1 = in.readLine(); //name
                 QString line2 = in.readLine();//product_description

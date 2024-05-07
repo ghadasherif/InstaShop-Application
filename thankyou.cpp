@@ -25,13 +25,13 @@ void ThankYou::on_pushButton_continue_clicked()
     QFile file("output.txt");
     QFile BuyerFile("");
 
-    if(!file.open(QFile::WriteOnly|QFile::Text))
+    if(!file.open(QFile::WriteOnly|QFile::Text)) //opens for write
     {
         QMessageBox::information(this,"title","file is not open");
 
     }
       QTextStream out (&file);
-    for (auto it=products.begin();it!=products.end();it++)
+    for (auto it=products.begin();it!=products.end();it++) // iterates over the vector of products and retrueves its data from the point it last stopped and writes it to the file
         {
         QString text1 = it->getProductName();
                 out<<text1;

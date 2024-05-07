@@ -47,11 +47,11 @@ void Register::on_pushButton_SubmitRegisterBuyer_clicked()
     {
         ui->labelErrorAllFields_register->setVisible(true);
     }
-    if (password==reenterpassword)
+    if (password==reenterpassword) //first password matches reentered password
     {
         ui->labelErrorPass->setVisible(true);
     }
-    for (auto i=0;i<Users_Buyer.size();i++)
+    for (auto i=0;i<Users_Buyer.size();i++) //usernames are all unique and never existed before
     {
         if(name==(Users_Buyer[i].Get_Name()))
         {
