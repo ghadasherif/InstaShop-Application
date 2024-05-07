@@ -5,6 +5,8 @@
 #include "UsersData.h"
 #include "user.h"
 #include <QString>
+#include <vector>
+#include <QVector>
 login_register_seller::login_register_seller(QWidget *parent) :
     QDialog(parent)
 

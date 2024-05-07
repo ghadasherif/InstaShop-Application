@@ -8,6 +8,7 @@
 #include "UsersData.h"
 #include "user.h"
 #include <QTextStream>
+#include <QVector>
 ThankYou::ThankYou(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::ThankYou)
@@ -24,6 +25,7 @@ void ThankYou::on_pushButton_continue_clicked()
 {
     QFile file("output.txt");
     QFile BuyerFile("");
+    QFile SellerFile("");
 
     if(!file.open(QFile::WriteOnly|QFile::Text)) //opens for write
     {
@@ -46,6 +48,48 @@ void ThankYou::on_pushButton_continue_clicked()
           }
           file.flush();
           file.close();
+          if(!SellerFile.open(QFile::WriteOnly|QFile::Text)) //opens for write
+          {
+                QMessageBox::information(this,"title","file is not open");
+          }
+          QTextStream sellerout (&SellerFile);
+          for (auto it=Users_Buyer.begin();it!=Users_Buyer.end();it++) // iterates over the vector of products and retrueves its data from the point it last stopped and writes it to the file
+          {
+                QString text1 = it->Get_Name();
+                sellerout<<text1;
+                QString text2 = it->Get_Email();
+                sellerout<<text2;
+                QString text3 =  QString::number(it->Get_Age());
+                sellerout<<text3;
+                QString text4 =  it-> Get_Phone(); //QString::n(it->Get_Phone());
+                sellerout<<text4;
+                QString text5 =  it->Get_Password();
+                sellerout<<text5;
+          }
+          file.flush();
+          file.close();
+          if(!BuyerFile.open(QFile::WriteOnly|QFile::Text)) //opens for write
+          {
+                QMessageBox::information(this,"title","file is not open");
+          }
+          QTextStream buyerout (&BuyerFile);
+          for (auto it=Users_Buyer.begin();it!=Users_Buyer.end();it++) // iterates over the vector of products and retrueves its data from the point it last stopped and writes it to the file
+          {
+                QString text1 = it->Get_Name();
+                buyerout<<text1;
+                QString text2 = it->Get_Email();
+                buyerout<<text2;
+                QString text3 =  QString::number(it->Get_Age());
+                buyerout<<text3;
+                QString text4 =  it-> Get_Phone(); //QString::n(it->Get_Phone());
+                buyerout<<text4;
+                QString text5 =  it->Get_Password();
+                buyerout<<text5;
+          }
+          file.flush();
+          file.close();
+
+
 
 
 

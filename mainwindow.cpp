@@ -7,6 +7,8 @@
 #include <QMessageBox>
 #include "vector_products.h"
 #include "UsersData.h"
+#include <QVector>
+#include <vector>
 
 //#include "ui_login_register_window.h"
 

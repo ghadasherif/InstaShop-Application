@@ -5,6 +5,8 @@
 #include "UsersData.h"
 #include "user.h"
 #include <QString>
+#include <vector>
+#include <QVector>
 Login_Register_Window::Login_Register_Window(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Login_Register_Window)
