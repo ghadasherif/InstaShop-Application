@@ -2,16 +2,21 @@
 #include "ui_shoppingcart.h"
 #include "checkout.h"
 #include "products1.h"
-#include "ShoppingCart_Vector.h"
-#include "ShoppingCart_Stack.h"
+//#include "ShoppingCart_Vector.h"
+//#include "ShoppingCart_Stack.h"
 #include "product.h"
-#include "vector_products.h"
+//#include "vector_products.h"
+#include "globals.h"
+
+//std::vector<Product> products(10);
+//std::stack<Product> Cart_Items;
+
 shoppingcart::shoppingcart(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::shoppingcart)
 {
     ui->setupUi(this);
-    for (auto i=0;i<Cart_item_Vecs.size();i++) // copies the content of the shopping cart stack to shopping cart vector
+    for (auto i=0;i<Cart_item_Vecs.size();i++)
     {
         while(!Cart_Items.empty())
         {
@@ -19,7 +24,7 @@ shoppingcart::shoppingcart(QWidget *parent) :
             Cart_Items.pop();
         }
     }
-    for(int i=0; i<Cart_item_Vecs.size();i++) // displays the content of the shopping cart vector to be shown inside labels in the shopping cart window
+    for(int i=0; i<Cart_item_Vecs.size();i++)
     {
             QString name_displaying=ui->Item1_name->text();
             QString nameitem=Cart_item_Vecs[i].getProductName();

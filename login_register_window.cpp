@@ -5,8 +5,6 @@
 #include "UsersData.h"
 #include "user.h"
 #include <QString>
-#include <vector>
-#include <QVector>
 Login_Register_Window::Login_Register_Window(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Login_Register_Window)
@@ -22,7 +20,7 @@ Login_Register_Window::~Login_Register_Window()
 
 void Login_Register_Window::on_pushButton_Register_clicked()
 {
-    for (auto i=0;i<Users_Seller.size();i++) //checks that the username and password of the buyer are correct
+    for (auto i=0;i<Users_Seller.size();i++)
     {
         QString username_copy_buyer=ui->lineEdit_username->text();
         QString password_copy_buyer=ui->lineEdit_password->text();

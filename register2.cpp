@@ -46,7 +46,7 @@ void register2::on_pushButton_SubmitRegisterSeller_clicked()
     if (name.isEmpty() || password.isEmpty() || reenterpassword.isEmpty() || email.isEmpty() || phoneNumber.isEmpty()) {        //to make sure that the seller entered all the data
         ui->labelErrorAllFields_register2->setVisible(true);
     }
-    for (auto i=0;i<Users_Seller.size();i++) //checks that the username did not exist before and is unique
+    for (auto i=0;i<Users_Seller.size();i++)
     {
         if(name==(Users_Seller[i].Get_Name()))
         {
@@ -54,7 +54,7 @@ void register2::on_pushButton_SubmitRegisterSeller_clicked()
             ui->labelErrorUsername_register2->setVisible(true);
         }
     }
-    if (password==reenterpassword) //checks that the reeentered password matches the first one
+    if (password==reenterpassword)
     {
         ui->labelErrorPassword_register2->setVisible(true);
     }

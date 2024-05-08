@@ -1,9 +1,14 @@
 #include "fruitsandvegetables.h"
 #include "ui_fruitsandvegetables.h"
 #include "shoppingcart.h"
-#include "ShoppingCart_Stack.h"
+//#include "ShoppingCart_Stack.h"
 #include "product.h"
-#include "vector_products.h"
+//#include "vector_products.h"
+#include "globals.h"
+
+//std::vector<Product> products(10);
+//std::stack<Product> Cart_Items;
+
 
 FruitsandVegetables::FruitsandVegetables(QWidget *parent) :
     QDialog(parent),

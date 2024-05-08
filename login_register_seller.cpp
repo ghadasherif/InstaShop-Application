@@ -5,8 +5,6 @@
 #include "UsersData.h"
 #include "user.h"
 #include <QString>
-#include <vector>
-#include <QVector>
 login_register_seller::login_register_seller(QWidget *parent) :
     QDialog(parent)
 
@@ -20,7 +18,7 @@ login_register_seller::~login_register_seller()
     delete ui;
 }
 
-void login_register_seller::on_pushButton_login_seller_clicked() // checks that the username and password for the seller are correct
+void login_register_seller::on_pushButton_login_seller_clicked()
 {
     for (auto i=0;i<(Users_Seller.size());i++)
     {

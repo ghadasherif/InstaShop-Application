@@ -1,9 +1,9 @@
 #include "bakeriesandcakes.h"
 #include "ui_bakeriesandcakes.h"
 #include "shoppingcart.h"
-#include "ShoppingCart_Stack.h"
+#include "globals.h"
 //#include "product.h"
-#include "vector_products.h"
+//#include "vector_products.h"
 BakeriesandCakes::BakeriesandCakes(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::BakeriesandCakes)

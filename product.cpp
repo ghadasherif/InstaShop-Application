@@ -1,6 +1,11 @@
 #include "product.h"
 #include <iostream>
-#include "vector_products.h"
+//#include "vector_products.h"
+#include "globals.h"
+
+//std::vector<Product> products(10);
+//std::stack<Product> Cart_Items;
+
 using namespace std;
 
 Product::Product() {}

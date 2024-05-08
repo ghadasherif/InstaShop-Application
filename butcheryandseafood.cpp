@@ -1,9 +1,10 @@
 #include "butcheryandseafood.h"
 #include "ui_butcheryandseafood.h"
 #include "shoppingcart.h"
-#include "ShoppingCart_Stack.h"
+//#include "ShoppingCart_Stack.h"
 #include "product.h"
-#include "vector_products.h"
+//#include "vector_products.h"
+#include "globals.h"
 
 butcheryandseafood::butcheryandseafood(QWidget *parent) :
     QDialog(parent),

@@ -1,8 +1,9 @@
 #include "deleteitem_seller.h"
 #include "ui_deleteitem_seller.h"
-#include "vector_products.h"
+//#include "vector_products.h"
 #include <QMessageBox>
-#include "ShoppingCart_Vector.h"
+//#include "ShoppingCart_Vector.h"
+#include "globals.h"
 
 deleteitem_seller::deleteitem_seller(QWidget *parent) :
     QDialog(parent),

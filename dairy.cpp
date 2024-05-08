@@ -1,9 +1,14 @@
 #include "dairy.h"
 #include "ui_dairy.h"
 #include "shoppingcart.h"
-#include "ShoppingCart_Stack.h"
+//#include "ShoppingCart_Stack.h"
 #include "product.h"
-#include "vector_products.h"
+//#include "vector_products.h"
+#include "globals.h"
+
+//std::vector<Product> products(10);
+//std::stack<Product> Cart_Items;
+
 Dairy::Dairy(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Dairy)

@@ -17,6 +17,7 @@ SOURCES += \
     fillcreditinfo.cpp \
     fillinfo_seller.cpp \
     fruitsandvegetables.cpp \
+    globals.cpp \
     login_register_seller.cpp \
     login_register_window.cpp \
     main.cpp \
@@ -31,8 +32,6 @@ SOURCES += \
     user.cpp
 
 HEADERS += \
-    ShoppingCart_Stack.h \
-    ShoppingCart_Vector.h \
     UsersData.h \
     bakeriesandcakes.h \
     butcheryandseafood.h \
@@ -42,6 +41,7 @@ HEADERS += \
     fillcreditinfo.h \
     fillinfo_seller.h \
     fruitsandvegetables.h \
+    globals.h \
     login_register_seller.h \
     login_register_window.h \
     mainwindow.h \
@@ -52,8 +52,7 @@ HEADERS += \
     register2.h \
     shoppingcart.h \
     thankyou.h \
-    user.h \
-    vector_products.h
+    user.h
 
 FORMS += \
     bakeriesandcakes.ui \

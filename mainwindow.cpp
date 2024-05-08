@@ -5,12 +5,16 @@
 #include "product.h"
 #include <QFile>
 #include <QMessageBox>
-#include "vector_products.h"
+#include <QDebug>
+//#include "vector_products.h"
 #include "UsersData.h"
-#include <QVector>
-#include <vector>
+#include "globals.h"
 
-//#include "ui_login_register_window.h"
+//std::vector<Product> products(10);
+//std::stack<Product> Cart_Items;
+
+
+#include "ui_login_register_window.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -23,7 +27,7 @@ MainWindow::MainWindow(QWidget *parent)
 
 
 
-    if(!file.open(QFile::ReadOnly | QFile::Text)) { //file open for read
+    if(!file.open(QFile::ReadOnly | QFile::Text)) {
         QMessageBox::information(this, "products file", "file is not open");
     }
     else
@@ -31,7 +35,7 @@ MainWindow::MainWindow(QWidget *parent)
         QTextStream in(&file);
         //QString text1;
         while (!in.atEnd()) {
-            for (int i = 0; i < 5; i++) //Goes through the file line by line until it is empty and iterates to copies the corresponding lines to the corresponding places inside the object of the current element
+            for (int i = 0; i < 5; i++)
             {
                 QString line1 = in.readLine(); //name
                 QString line2 = in.readLine();//product_description
@@ -47,6 +51,7 @@ MainWindow::MainWindow(QWidget *parent)
                 obj.setproduct_price(y);
                 obj.setproduct_ID(x);
                 obj.setproduct_description(line4);*/
+
                 obj.addProduct(line1,y,line2,x,line5);
                  products.push_back(obj);
             }
@@ -63,6 +68,8 @@ MainWindow::MainWindow(QWidget *parent)
     {
         QTextStream in(&buyerFile);
         while (!in.atEnd()) {
+             // QString line = in.readLine();
+            // qDebug() << "Read line:" << line;
             QString name = in.readLine();
             int age = in.readLine().toInt();
             QString email = in.readLine();
@@ -104,9 +111,11 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_seller_button_clicked()
 {
+   // qDebug() << "Seller button clicked";
     hide();
     login_register_seller* LoginRegister2= new login_register_seller(this);
     LoginRegister2->show();
+   // qDebug() << "Seller window shown";
 }
 
 
